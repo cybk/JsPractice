@@ -1,0 +1,7 @@
+.turtle {
+    position: relative;
+    --x: 10px;
+    --y: 10px;
+    transform: translateX(var(--x)) translateY(var(--y));
+    /* transition: transform(0.2s); */
+}
