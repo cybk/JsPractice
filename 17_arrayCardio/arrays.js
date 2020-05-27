@@ -73,3 +73,5 @@ if (!isInToppings) {
 }
 
 console.log(toppings);
+
+// callback methods
