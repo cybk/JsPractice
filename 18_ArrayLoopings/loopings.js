@@ -142,3 +142,30 @@ const cleanPeople = people.map(p => {
 });
 
 console.log(cleanPeople);
+
+const over40 = cleanPeople.filter(p => p.age > 40);
+console.table(over40);
+
+// reduce!!!
+console.clear();
+let total = 0;
+orderTotals.forEach(singleTotal => {
+    total += singleTotal;
+});
+
+console.log('total', total);
+
+const allOrders = orderTotals.reduce((tot, num) => tot + num);
+
+console.log('total reducer', allOrders);
+
+const inventoryCounts = inventory.reduce((tot, item) => {
+    tot[item.type] = tot[item.type] + 1 || 1;
+    return tot;
+}, {});
+
+console.log('inventory', inventoryCounts);
+
+const totalInventory = inventory.reduce((tot, item) => tot + item.price, 0);
+
+console.log('total inventory', totalInventory);
