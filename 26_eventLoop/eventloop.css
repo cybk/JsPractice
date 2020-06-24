@@ -1,0 +1,22 @@
+.go {
+    margin: 5px;
+    background: white;
+    padding: 5rem;
+    width: 15rem;
+}
+
+.go.circle {
+    border-radius: 50%;
+}
+
+.go.red {
+    background: red;
+}
+
+.go.purple {
+    background: purple;
+}
+
+.go.fadeout {
+    opacity: 0;
+}
